@@ -218,7 +218,7 @@ campsiteRouter
               })
               .catch((err) => next(err));
           } else {
-            err = new Error("You are not Authorised to update this comment.");
+            err = new Error("You are not Authorized to update this comment.");
             err.status = 403;
             return next(err);
           }
@@ -253,7 +253,7 @@ campsiteRouter
               })
               .catch((err) => next(err));
           } else {
-            err = new Error("You are not Authorised to delete this comment.");
+            err = new Error("You are not Authorized to delete this comment.");
             err.status = 403;
             return next(err);
           }
